@@ -78,12 +78,29 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public void remove(int index) {
+        if (index == 0) {
+            head = head.next;
+        } else {
+            Node i = head;
+            Node j;
+            for (int count = 1; count < index; count++) {
+                i = i.next;
+            }
+            j = i.next;
+            i.next = j.next;
 
+        }
     }
 
     @Override
     public int size() {
-        return 0;
+        Node i = head ;
+        int count = 0;
+        while (i.next != null){
+            count ++ ;
+            i = i.next;
+        }
+        return count+1;
     }
 
     @Override
@@ -93,6 +110,15 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public boolean contains(Object o) {
+        Node i =head;
+        for (int count = 0 ; count < size(); count++){
+            if (i.value == o){
+                return true;
+            }
+            else {
+                i = i.next;
+            }
+        }
         return false;
     }
     public void print(){
@@ -110,7 +136,10 @@ public class SingleLinkedList implements ILinkedList {
         single.add("mark");
         single.print();
         // System.out.println(single.get(1));
-        single.set(0,'n');
+        //single.set(0,'n');
+        //single.print();
+        single.remove(0);
         single.print();
+        System.out.println(single.contains("mark"));
     }
 }

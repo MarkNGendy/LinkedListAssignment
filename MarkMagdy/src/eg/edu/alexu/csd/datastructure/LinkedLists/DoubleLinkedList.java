@@ -1,7 +1,7 @@
 package eg.edu.alexu.csd.datastructure.LinkedLists;
 
 public class DoubleLinkedList implements ILinkedList{
-
+private DoubleNode head = null;
     @Override
     public void add(int index, Object element) {
 

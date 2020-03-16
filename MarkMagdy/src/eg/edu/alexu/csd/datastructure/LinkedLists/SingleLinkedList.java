@@ -1,50 +1,52 @@
 package eg.edu.alexu.csd.datastructure.LinkedLists;
 
 public class SingleLinkedList implements ILinkedList {
-    private Node head = null;
+    public class Node {
+        public Object value;
+        public Node next = null;
+        public Node(Object element) {
+            this.value = element;
+        }
+    }
+
+    private Node head;
+    private int size;
+
+    public SingleLinkedList() {
+        this.size = 0;
+    }
+
     @Override
     public void add(int index, Object element) {
+        // check index and null
         Node newNode = new Node(element);
         if (index == 0) {
             newNode.next = head;
             head = newNode;
         } else {
             Node i = head;
-            for (int count = 1; count < index; count++) {
+            for (int count = 0; count < index - 1; count++) {
                 i = i.next;
             }
             newNode.next = i.next;
             i.next = newNode;
         }
+        size++;
     }
 
     @Override
     public void add(Object element) {
-        Node i = head;
-        Node newNode = new Node(element);
-        while (i.next != null){
-            i = i.next;
-        }
-        newNode.next = i.next;
-        i.next = newNode;
+        add(size, element);
     }
 
     @Override
     public Object get(int index) {
-        Node i = head;
-        if (index==0){
-            return i.value;
+        // check index
+        Node curr = head;
+        for (int count = 0; count < index; count++) {
+            curr = curr.next;
         }
-        for (int count = 1 ; count<index ; count++){
-            i = i.next;
-        }
-        if (i.next == null){
-            return null;
-        }
-        else {
-            i = i.next;
-            return i.value;
-        }
+        return curr.value;
     }
 
     @Override
@@ -68,78 +70,63 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public void clear() {
-
+        head = null;
+        size = 0;
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
 
     @Override
     public void remove(int index) {
+        // validation
         if (index == 0) {
             head = head.next;
         } else {
-            Node i = head;
-            Node j;
-            for (int count = 1; count < index; count++) {
-                i = i.next;
+            Node prev = head;
+            for (int count = 0; count < index - 1; count++) {
+                prev = prev.next;
             }
-            j = i.next;
-            i.next = j.next;
-
+            Node nodeToRemove = prev.next;
+            prev.next = nodeToRemove.next;
         }
     }
 
     @Override
     public int size() {
-        Node i = head ;
-        int count = 0;
-        while (i.next != null){
-            count ++ ;
-            i = i.next;
-        }
-        return count+1;
+        return size;
     }
 
     @Override
     public ILinkedList sublist(int fromIndex, int toIndex) {
-        return null;
+        int size = fromIndex - toIndex + 1;
+        Node i = head;
+        for (int j = 0; j < fromIndex; j++) {
+            i = i.next;
+        }
+        ILinkedList sublist = new SingleLinkedList();
+        for (int j = 0; j < size; j++) {
+            sublist.add(i);
+            i = i.next;
+        }
+        return sublist;
     }
 
     @Override
     public boolean contains(Object o) {
-        Node i =head;
-        for (int count = 0 ; count < size(); count++){
-            if (i.value == o){
+        Node i = head;
+        while (i != null) {
+            if (i.value.equals(o)) {
                 return true;
             }
-            else {
-                i = i.next;
-            }
+            i = i.next;
         }
         return false;
     }
-    public void print(){
-        Node i = head ;
-        while (i != null){
-            System.out.println(i.value);
-            i = i.next;
-        }
-    }
+
     public static void main(String[] args) {
-        SingleLinkedList single = new SingleLinkedList();
-        single.add(0,5);
-        single.add(1,'a');
-        single.add(2,9);
-        single.add("mark");
-        single.print();
-        // System.out.println(single.get(1));
-        //single.set(0,'n');
-        //single.print();
-        single.remove(0);
-        single.print();
-        System.out.println(single.contains("mark"));
+
     }
 }

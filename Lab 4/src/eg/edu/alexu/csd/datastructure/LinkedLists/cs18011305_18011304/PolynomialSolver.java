@@ -1,6 +1,8 @@
 package eg.edu.alexu.csd.datastructure.LinkedLists.cs18011305_18011304;
 
 public class PolynomialSolver extends SingleLinkedList implements IPolynomialSolver {
+    ILinkedList polynomial = new SingleLinkedList();
+
     @Override
     public void setPolynomial(char poly, int[][] terms) {
 

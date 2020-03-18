@@ -25,6 +25,9 @@ public class DoubleNode {
     @Override
     public void add(int index, Object element) {
         DoubleNode newnode = new DoubleNode(element);
+        if (index>size||index<0){
+            return;
+        }
         if (index==0){
             newnode.next = head;
             newnode.prev = null;
@@ -50,6 +53,9 @@ public class DoubleNode {
     @Override
     public Object get(int index) {
         // check index
+        if (index>size||index<0){
+            return null;
+        }
         DoubleNode curr = head;
         for (int count = 0; count < index; count++) {
             curr = curr.next;
@@ -60,6 +66,9 @@ public class DoubleNode {
     @Override
     public void set(int index, Object element) {
         DoubleNode newnode = new DoubleNode(element);
+        if (index>size||index<0){
+            return;
+        }
         DoubleNode j;
     if (index == 0){
             j = head;
@@ -94,6 +103,12 @@ public class DoubleNode {
 
     @Override
     public void remove(int index) {
+        if (index>size||index<0){
+            return;
+        }
+        if (size==1){
+            return;
+        }
         if (index == 0){
             head = head.next;
         }
@@ -129,31 +144,5 @@ public class DoubleNode {
             i = i.next;
         }
         return false;
-    }
-    //display() will print out the nodes of the list
-    public void display() {
-        //Node current will point to head
-        DoubleNode current = head;
-        if(head == null) {
-            System.out.println("List is empty");
-            return;
-        }
-        System.out.println("Nodes of doubly linked list: ");
-        while(current != null) {
-            //Prints each node by incrementing the pointer.
-
-            System.out.print(current.value + " ");
-            current = current.next;
-        }
-    }
-
-    public static void main(String[] args) {
-        DoubleLinkedList d = new DoubleLinkedList();
-        d.add(0,5);
-        d.add(1,2);
-        d.add(2,9);
-        d.add("m");
-        //d.remove(3);
-        d.display();
     }
 }

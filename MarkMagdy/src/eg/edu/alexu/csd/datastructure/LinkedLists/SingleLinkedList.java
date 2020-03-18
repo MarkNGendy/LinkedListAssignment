@@ -19,6 +19,9 @@ public class SingleLinkedList implements ILinkedList {
     @Override
     public void add(int index, Object element) {
         // check index and null
+        if (index>size||index<0){
+            return;
+        }
         Node newNode = new Node(element);
         if (index == 0) {
             newNode.next = head;
@@ -42,6 +45,9 @@ public class SingleLinkedList implements ILinkedList {
     @Override
     public Object get(int index) {
         // check index
+        if (index>size||index<0){
+            return null;
+        }
         Node curr = head;
         for (int count = 0; count < index; count++) {
             curr = curr.next;
@@ -51,6 +57,9 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public void set(int index, Object element) {
+        if (index>size||index<0){
+            return;
+        }
         Node j;
         Node newNode = new Node(element);
         if (index == 0) {
@@ -82,6 +91,12 @@ public class SingleLinkedList implements ILinkedList {
     @Override
     public void remove(int index) {
         // validation
+        if (index>size||index<0){
+            return;
+        }
+        if (size==1){
+            return;
+        }
         if (index == 0) {
             head = head.next;
         } else {
@@ -92,6 +107,7 @@ public class SingleLinkedList implements ILinkedList {
             Node nodeToRemove = prev.next;
             prev.next = nodeToRemove.next;
         }
+        size--;
     }
 
     @Override

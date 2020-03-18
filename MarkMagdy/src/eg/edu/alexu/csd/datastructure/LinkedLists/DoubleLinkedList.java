@@ -12,16 +12,16 @@ public class DoubleNode {
     public DoubleNode (Object element){
         this.value = element;
     }
-
-
     public DoubleNode() {
         this.next = null;
         this.prev = null;
     }
-}
-public DoubleLinkedList(){
+    }
+
+    public DoubleLinkedList(){
     this.size = 0;
-}
+    }
+
     @Override
     public void add(int index, Object element) {
         DoubleNode newnode = new DoubleNode(element);
@@ -89,7 +89,7 @@ public DoubleLinkedList(){
 
     @Override
     public boolean isEmpty() {
-        return size == 0;
+    return size == 0;
     }
 
     @Override
@@ -99,18 +99,19 @@ public DoubleLinkedList(){
         }
         else {
             DoubleNode i = head;
-            for (int count = 1 ; count<index ; count++){
+            for (int count = 0 ;count < index - 1;count++){
                 i =i.next;
             }
             DoubleNode j = i.next;
             i.next = j.next;
             j.prev = i;
         }
+        size--;
     }
 
     @Override
     public int size() {
-        return size;
+    return size;
     }
 
     @Override

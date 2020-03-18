@@ -95,7 +95,7 @@ public class SingleLinkedListTest {
 
     @org.junit.Test
     public void sublist() {
-      /*  SingleLinkedList singleList = new SingleLinkedList();
+        SingleLinkedList singleList = new SingleLinkedList();
         singleList.add("test");
         singleList.add("mm");
         singleList.add(2);

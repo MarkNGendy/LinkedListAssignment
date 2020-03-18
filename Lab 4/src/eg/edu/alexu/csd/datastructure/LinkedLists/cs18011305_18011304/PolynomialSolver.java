@@ -158,7 +158,7 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
 
     @Override
     public int[][] multiply(char poly1, char poly2) {
-
+        
         return new int[0][];
     }
     private ILinkedList getList(char poly) {

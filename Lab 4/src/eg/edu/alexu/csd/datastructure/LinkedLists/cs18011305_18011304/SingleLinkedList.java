@@ -92,6 +92,7 @@ public class SingleLinkedList implements ILinkedList {
             Node nodeToRemove = prev.next;
             prev.next = nodeToRemove.next;
         }
+        size--;
     }
 
     @Override
@@ -101,14 +102,14 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public ILinkedList sublist(int fromIndex, int toIndex) {
-        int size = fromIndex - toIndex + 1;
+        int size = toIndex - fromIndex + 1;
         Node i = head;
         for (int j = 0; j < fromIndex; j++) {
             i = i.next;
         }
         ILinkedList sublist = new SingleLinkedList();
         for (int j = 0; j < size; j++) {
-            sublist.add(i);
+            sublist.add(i.value);
             i = i.next;
         }
         return sublist;

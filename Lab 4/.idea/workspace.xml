@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4871da46-bb6a-42c4-838d-5fab26276f78" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab 4/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab 4/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/DoubleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab 4/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab 4/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/DoubleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab 4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab 4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MarkMagdy/.idea/MarkMagdy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../MarkMagdy/.idea/MarkMagdy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MarkMagdy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MarkMagdy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MarkMagdy/src/eg/edu/alexu/csd/datastructure/LinkedLists/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MarkMagdy/src/eg/edu/alexu/csd/datastructure/LinkedLists/DoubleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MarkMagdy/src/eg/edu/alexu/csd/datastructure/LinkedLists/SingleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MarkMagdy/src/eg/edu/alexu/csd/datastructure/LinkedLists/SingleLinkedListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,14 +23,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+            <state relative-caret-position="375">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
               <folding>
                 <element signature="e#682#683#0" expanded="true" />
                 <element signature="e#749#750#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="107" column="9" lean-forward="true" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+              <folding>
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#1805#1806#0" expanded="true" />
+                <element signature="e#1837#1838#0" expanded="true" />
+                <element signature="e#2264#2265#0" expanded="true" />
+                <element signature="e#2291#2292#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,10 +95,11 @@
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/hangman/cs18011305/SingleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/hangman/cs18011305/Node.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/hangman/cs18011305_18011304/ILinkedList.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/IPolynomialSolver.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/DoubleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedList.java" />
       </list>
     </option>
   </component>
@@ -111,8 +142,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MarkMagdy" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -126,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SingleLinkedListTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.datastructure.hangman.cs18011305_18011304.Main" />
       <module name="Lab 4" />
@@ -137,8 +172,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SingleLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab 4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eg.edu.alexu.csd.datastructure.LinkedLists.cs18011305_18011304.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eg.edu.alexu.csd.datastructure.LinkedLists.cs18011305_18011304" />
+      <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.datastructure.LinkedLists.cs18011305_18011304.SingleLinkedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SingleLinkedListTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -156,10 +207,37 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SingleLinkedListTest - 2020.03.18 at 23h 15m 36s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.18 at 23h 18m 06s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.18 at 23h 18m 42s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.18 at 23h 19m 23s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.18 at 23h 19m 27s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.18 at 23h 20m 44s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.18 at 23h 24m 06s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleLinkedListTest - 2020.03.18 at 23h 24m 10s.xml">
+      <configuration name="SingleLinkedListTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3222849" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3222849" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -169,7 +247,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32756132" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32756132" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997114" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -186,6 +264,20 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedListTest.java</url>
+          <line>97</line>
+          <properties class="eg.edu.alexu.csd.datastructure.LinkedLists.cs18011305_18011304.SingleLinkedListTest" method="sublist">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../Team Labs/LinkedLists-Assignment/lab 4/src/Singly.java" />
@@ -223,19 +315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="105" column="30" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
-          <folding>
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/ILinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -245,8 +324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
+        <state relative-caret-position="375">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
           <folding>
             <element signature="e#682#683#0" expanded="true" />
             <element signature="e#749#750#0" expanded="true" />
@@ -258,6 +337,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+          <folding>
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#6484#6648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/SingleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="107" column="9" lean-forward="true" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+          <folding>
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#1805#1806#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#2264#2265#0" expanded="true" />
+            <element signature="e#2291#2292#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

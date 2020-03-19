@@ -105,7 +105,7 @@ public class SingleLinkedListTest {
         //assertEquals(3, newList.size());
         assertEquals("mm", newList.get(0));
         assertEquals(2, newList.get(1));
-        assertEquals(8, newList.get(2));*/
+        assertEquals(8, newList.get(2));
     }
 
     @org.junit.Test

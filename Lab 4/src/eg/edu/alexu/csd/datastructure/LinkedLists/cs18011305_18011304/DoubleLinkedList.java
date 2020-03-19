@@ -113,14 +113,14 @@ public class DoubleLinkedList implements ILinkedList {
     @Override
     public ILinkedList sublist(int fromIndex, int toIndex) {
         // Checking indexes
-        int size = fromIndex - toIndex + 1;
+        int size = toIndex - fromIndex + 1;
         DoubleNode i = head;
         for (int j = 0; j < fromIndex; j++) {
             i = i.next;
         }
-        ILinkedList sublist = new DoubleLinkedList();
+        ILinkedList sublist = new SingleLinkedList();
         for (int j = 0; j < size; j++) {
-            sublist.add(i);
+            sublist.add(i.value);
             i = i.next;
         }
         return sublist;

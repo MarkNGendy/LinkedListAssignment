@@ -102,7 +102,7 @@ public class SingleLinkedListTest {
         singleList.add(8);
         singleList.add('b');
         ILinkedList newList = singleList.sublist(1,3);
-        //assertEquals(3, newList.size());
+        assertEquals(3, newList.size());
         assertEquals("mm", newList.get(0));
         assertEquals(2, newList.get(1));
         assertEquals(8, newList.get(2));

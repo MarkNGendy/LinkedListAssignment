@@ -18,7 +18,9 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public void add(int index, Object element) {
-        // check index and null
+        if (index > size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
+        }
         Node newNode = new Node(element);
         if (index == 0) {
             newNode.next = head;
@@ -41,7 +43,9 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public Object get(int index) {
-        // check index
+        if (index >= size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
+        }
         Node curr = head;
         for (int count = 0; count < index; count++) {
             curr = curr.next;
@@ -51,6 +55,9 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public void set(int index, Object element) {
+        if (index >= size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
+        }
         Node j;
         Node newNode = new Node(element);
         if (index == 0) {
@@ -81,7 +88,9 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public void remove(int index) {
-        // validation
+        if (index >= size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
+        }
         if (index == 0) {
             head = head.next;
         } else {
@@ -102,17 +111,20 @@ public class SingleLinkedList implements ILinkedList {
 
     @Override
     public ILinkedList sublist(int fromIndex, int toIndex) {
-        int size = toIndex - fromIndex + 1;
-        Node i = head;
-        for (int j = 0; j < fromIndex; j++) {
-            i = i.next;
+        if (fromIndex < size && toIndex < size && fromIndex < toIndex && fromIndex >= 0) {
+            int size = toIndex - fromIndex + 1;
+            Node i = head;
+            for (int j = 0; j < fromIndex; j++) {
+                i = i.next;
+            }
+            ILinkedList sublist = new SingleLinkedList();
+            for (int j = 0; j < size; j++) {
+                sublist.add(i.value);
+                i = i.next;
+            }
+            return sublist;
         }
-        ILinkedList sublist = new SingleLinkedList();
-        for (int j = 0; j < size; j++) {
-            sublist.add(i.value);
-            i = i.next;
-        }
-        return sublist;
+        throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
     }
 
     @Override

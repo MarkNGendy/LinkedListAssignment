@@ -1,5 +1,6 @@
 package eg.edu.alexu.csd.datastructure.LinkedLists.cs18011305_18011304;
 
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -118,4 +119,5 @@ public class SingleLinkedListTest {
         assertEquals(false,singleList.contains(5));
         assertEquals(true,singleList.contains(4));
     }
+
 }

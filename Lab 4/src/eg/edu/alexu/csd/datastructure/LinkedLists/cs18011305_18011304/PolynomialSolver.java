@@ -24,6 +24,13 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
 
     @Override
     public void setPolynomial(char poly, int[][] terms) {
+        Arrays.sort(terms, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o2[1] - o1[1];
+            }
+        });
+        getList(poly).clear();
         for (int i = 0; i < terms.length; i++) {
             PolyTerm temp = new PolyTerm(terms[i][0], terms[i][1]);
             getList(poly).add(temp);
@@ -32,20 +39,37 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
 
     @Override
     public String print(char poly) {
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < (getList(poly).size())-1; i++) {
-            PolyTerm temp = (PolyTerm) getList(poly).get(i);
-            if (temp.expo != 0) {
-                builder.append(temp.coeff + "x^" + temp.expo + "+");
-            } else {
-                builder.append(temp.coeff + "+");
-            }
+        if (getList(poly).size() == 0) {
+            return null;
         }
-        PolyTerm temp = (PolyTerm) getList(poly).get(getList(poly).size());
-        if (temp.expo != 0) {
-            builder.append(temp.coeff + "x^" + temp.expo);
-        } else {
-            builder.append(temp.coeff);
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < (getList(poly).size()); i++) {
+            PolyTerm temp = (PolyTerm) getList(poly).get(i);
+            if (temp.coeff == 0) {
+                continue;
+            }
+            if (builder.toString().length() == 0) {
+                if (temp.coeff != 1 || temp.expo == 0) {
+                    builder.append(temp.coeff);
+                }
+            } else {
+                if (temp.coeff == 1) {
+                    if (temp.expo == 0) {
+                        builder.append("+1");
+                    } else {
+                        builder.append("+");
+                    }
+                } else if (temp.coeff > 0) {
+                    builder.append("+" + temp.coeff);
+                } else {
+                    builder.append(temp.coeff);
+                }
+            }
+            if (temp.expo == 1) {
+                builder.append("X");
+            } else if (temp.expo != 0) {
+                builder.append("X^" + temp.expo);
+            }
         }
         return builder.toString();
     }
@@ -71,7 +95,7 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
         int i = 0, j = 0;
         ILinkedList list1 = getList(poly1);
         ILinkedList list2 = getList(poly2);
-        while (list1.get(i) != null && list2.get(j) != null) {
+        while (i < list1.size() && j < list2.size()) {
             PolyTerm first = (PolyTerm) list1.get(i);
             PolyTerm second = (PolyTerm) list2.get(j);
             PolyTerm res;
@@ -88,8 +112,8 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
             }
             result.add(res);
         }
-        if (list1.get(i) != null) {
-            while (list2.get(j) != null) {
+        if (j < list2.size()) {
+            while (j < list2.size()) {
                 PolyTerm res;
                 PolyTerm second = (PolyTerm) list2.get(j);
                 res = new PolyTerm(second.coeff, second.expo);
@@ -97,7 +121,7 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
                 j++;
             }
         } else {
-            while (list1.get(i) != null) {
+            while (i < list1.size()) {
                 PolyTerm res;
                 PolyTerm first = (PolyTerm) list1.get(i);
                 res = new PolyTerm(first.coeff, first.expo);
@@ -114,7 +138,7 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
         int i = 0, j = 0;
         ILinkedList list1 = getList(poly1);
         ILinkedList list2 = getList(poly2);
-        while (list1.get(i) != null && list2.get(j) != null) {
+        while (i < list1.size() && j < list2.size()) {
             PolyTerm first = (PolyTerm) list1.get(i);
             PolyTerm second = (PolyTerm) list2.get(j);
             PolyTerm res;
@@ -131,8 +155,8 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
             }
             result.add(res);
         }
-        if (list1.get(i) != null) {
-            while (list2.get(j) != null) {
+        if (j < list2.size()) {
+            while (j < list2.size()) {
                 PolyTerm res;
                 PolyTerm second = (PolyTerm) list2.get(j);
                 res = new PolyTerm(-second.coeff, second.expo);
@@ -140,7 +164,7 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
                 j++;
             }
         } else {
-            while (list1.get(i) != null) {
+            while (i < list1.size()) {
                 PolyTerm res;
                 PolyTerm first = (PolyTerm) list1.get(i);
                 res = new PolyTerm(first.coeff, first.expo);
@@ -175,7 +199,7 @@ public class PolynomialSolver extends SingleLinkedList implements IPolynomialSol
         return sortedResult;
     }
 
-    private ILinkedList getList(char poly) {
+    public ILinkedList getList(char poly) {
         switch (poly) {
             case 'A': return A;
             case 'B': return B;

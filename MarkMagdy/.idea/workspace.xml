@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30ab6dab-1648-4907-af88-952cf43e3f1d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lab 4/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/DoubleLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab 4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab 4/out/production/Lab 4/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab 4/out/production/Lab 4/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab 4/out/production/Lab 4/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab 4/out/production/Lab 4/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab 4/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab 4/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/PolynomialSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab 4/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/UIApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab 4/src/eg/edu/alexu/csd/datastructure/LinkedLists/cs18011305_18011304/UIApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/SingleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/SingleLinkedListTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,11 +63,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="959">
+            <state relative-caret-position="584">
               <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/DoubleLinkedListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1234">
+              <caret line="110" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="110" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,7 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -127,6 +142,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -135,7 +151,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab 4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -167,8 +183,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25599435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2609309" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -251,8 +268,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/SingleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
+        <state relative-caret-position="584">
           <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/datastructure/LinkedLists/DoubleLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1234">
+          <caret line="110" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="110" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

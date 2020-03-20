@@ -20,6 +20,9 @@ public class DoubleLinkedList implements ILinkedList {
 
     @Override
     public void add(int index, Object element) {
+        if (index > size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
+        }
         DoubleNode newnode = new DoubleNode(element);
         if (index==0){
             newnode.next = head;
@@ -45,7 +48,9 @@ public class DoubleLinkedList implements ILinkedList {
 
     @Override
     public Object get(int index) {
-        // check index
+        if (index >= size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
+        }
         DoubleNode curr = head;
         for (int count = 0; count < index; count++) {
             curr = curr.next;
@@ -55,6 +60,9 @@ public class DoubleLinkedList implements ILinkedList {
 
     @Override
     public void set(int index, Object element) {
+        if (index >= size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
+        }
         DoubleNode newnode = new DoubleNode(element);
         DoubleNode j;
         if (index == 0){
@@ -90,8 +98,12 @@ public class DoubleLinkedList implements ILinkedList {
 
     @Override
     public void remove(int index) {
+        if (index >= size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
+        }
         if (index == 0){
             head = head.next;
+            size--;
         }
         else {
             DoubleNode i = head;
@@ -113,17 +125,20 @@ public class DoubleLinkedList implements ILinkedList {
     @Override
     public ILinkedList sublist(int fromIndex, int toIndex) {
         // Checking indexes
-        int size = toIndex - fromIndex + 1;
-        DoubleNode i = head;
-        for (int j = 0; j < fromIndex; j++) {
-            i = i.next;
+        if (fromIndex < size && toIndex < size && fromIndex < toIndex && fromIndex >= 0) {
+            int size = toIndex - fromIndex + 1;
+            DoubleNode i = head;
+            for (int j = 0; j < fromIndex; j++) {
+                i = i.next;
+            }
+            ILinkedList sublist = new SingleLinkedList();
+            for (int j = 0; j < size; j++) {
+                sublist.add(i.value);
+                i = i.next;
+            }
+            return sublist;
         }
-        ILinkedList sublist = new SingleLinkedList();
-        for (int j = 0; j < size; j++) {
-            sublist.add(i.value);
-            i = i.next;
-        }
-        return sublist;
+        throw new ArrayIndexOutOfBoundsException("Out of boundaries indexes");
     }
 
     @Override

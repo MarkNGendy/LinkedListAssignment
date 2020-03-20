@@ -12,16 +12,16 @@ public class DoubleNode {
     public DoubleNode (Object element){
         this.value = element;
     }
+
+
     public DoubleNode() {
         this.next = null;
         this.prev = null;
     }
-    }
-
-    public DoubleLinkedList(){
+}
+public DoubleLinkedList(){
     this.size = 0;
-    }
-
+}
     @Override
     public void add(int index, Object element) {
         DoubleNode newnode = new DoubleNode(element);
@@ -98,7 +98,7 @@ public class DoubleNode {
 
     @Override
     public boolean isEmpty() {
-    return size == 0;
+        return size == 0;
     }
 
     @Override
@@ -114,7 +114,7 @@ public class DoubleNode {
         }
         else {
             DoubleNode i = head;
-            for (int count = 0 ;count < index - 1;count++){
+            for (int count = 1 ; count<index ; count++){
                 i =i.next;
             }
             DoubleNode j = i.next;
@@ -126,12 +126,25 @@ public class DoubleNode {
 
     @Override
     public int size() {
-    return size;
+        return size;
     }
 
     @Override
     public ILinkedList sublist(int fromIndex, int toIndex) {
+    if (0>fromIndex||fromIndex>size||0>toIndex||toIndex>size){
         return null;
+    }
+    int size = toIndex - fromIndex + 1;
+        DoubleNode i = head;
+        for (int j = 0; j < fromIndex; j++) {
+            i = i.next;
+        }
+        ILinkedList sublist = new SingleLinkedList();
+        for (int j = 0; j < size; j++) {
+            sublist.add(i.value);
+            i = i.next;
+        }
+        return sublist;
 }
 
     @Override

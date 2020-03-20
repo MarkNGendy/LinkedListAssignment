@@ -98,6 +98,17 @@ public class DoubleLinkedListTest {
     @Test
     public void sublist() {
         DoubleLinkedList doubleList = new DoubleLinkedList();
+
+        doubleList.add("test");
+        doubleList.add("mm");
+        doubleList.add(2);
+        doubleList.add(8);
+        doubleList.add('b');
+        ILinkedList newList = doubleList.sublist(1,3);
+        assertEquals(3, newList.size());
+        assertEquals("mm", newList.get(0));
+        assertEquals(2, newList.get(1));
+        assertEquals(8, newList.get(2));
     }
 
     @Test
